@@ -3,54 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa 2: Familia López</title>
+    <title>Casa 2 - Familia Pérez</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f3f4f6; /* Fondo claro */
             margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00796b; /* Verde oscuro */
+            color: white;
             padding: 20px;
             text-align: center;
         }
+        .contenedor {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
         h1 {
+            color: #00796b;
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
             color: #333;
         }
-        .informacion {
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px auto;
-            width: 80%;
-            text-align: left;
+        .icono {
+            font-size: 100px;
+            text-align: center;
+            margin: 20px 0;
         }
-        .boton-regresar {
+        .botones {
+            display: flex;
+            justify-content: space-between;
             margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #007BFF;
+        }
+        .boton {
+            background-color: #00796b;
             color: white;
             border: none;
-            border-radius: 10px;
-            cursor: pointer;
+            padding: 10px 20px;
             text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
-        .boton-regresar:hover {
-            background-color: #0056b3;
+        .boton:hover {
+            background-color: #004d40;
+        }
+        .informacion {
+            margin-top: 20px;
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 5px solid #00796b;
+        }
+        footer {
+            margin-top: 40px;
+            background-color: #00796b;
+            color: white;
+            padding: 15px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Casa 2: Familia López</h1>
-    
-    <div class="informacion">
-        <h2>Información de la Familia:</h2>
-        <p><strong>Jefe de hogar:</strong> María López (madre)</p>
-        <p><strong>Enfermedades:</strong> Ninguna conocida</p>
-        <p><strong>Discapacidad:</strong> Ninguna</p>
-        <p><strong>Estado de la familia:</strong> La familia está en una situación estable económicamente. Tienen una pequeña tienda de abarrotes.</p>
+    <header>
+        <h1>Casa 2 - Familia Pérez</h1>
+    </header>
+
+    <div class="contenedor">
+        <div class="icono">👨‍👩‍👧‍👦</div>
+        <p>Bienvenido a la Casa 2. Aquí vive la Familia Pérez, una familia amigable y trabajadora. Te invitamos a conocer más sobre ellos y sus necesidades.</p>
+
+        <div class="informacion">
+            <h2>Información de la Familia</h2>
+            <ul>
+                <li><strong>Jefe de Hogar:</strong> Mario Pérez</li>
+                <li><strong>Número de Miembros:</strong> 4</li>
+                <li><strong>Enfermedades Crónicas:</strong> Diabetes</li>
+                <li><strong>Discapacidad:</strong> Ninguna</li>
+                <li><strong>Estado Actual:</strong> Necesitan apoyo médico para controlar la diabetes de Mario.</li>
+            </ul>
+        </div>
+
+        <div class="botones">
+            <a href="index.html" class="boton">Regresar</a>
+            <a href="centro_salud.html" class="boton">Ir al Centro de Salud</a>
+        </div>
     </div>
 
-    <a href="explorar_todo.html" class="boton-regresar">Regresar a la Página Principal</a>
+    <footer>
+        <p>© 2024 Casas y Familias. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
